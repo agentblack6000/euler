@@ -13,28 +13,22 @@ bool is_divisble(int n);
 
 int main(void)
 {
-    int n = 1;
-    // int i = 1;
-    // while (n == 0)
-    // {
-    //     if (is_divisble(i))
-    //     {
-    //         n = i;
-    //     }
-    //     else
-    //     {
-    //         i++;
-    //     }
-    // }
+    int n = 0;
+    int i = 1;
 
-    for (int i = 2; i < LIMIT; i++)
+    while (n == 0)
     {
-        n *= i;
+        if (is_divisble(i))
+        {
+            n = i;
+        }
+        else
+        {
+            i++;
+        }
     }
     
-    
     printf("%i\n", n);
-
 }
 
 bool is_divisble(int n)
